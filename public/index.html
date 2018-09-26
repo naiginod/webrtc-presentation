@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="app.css" />
+  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
+  <title>WebRTC</title>
+</head>
+
+<body>
+  <div class="videoDisplay">
+    <video id="localVideo" muted autoplay controls></video>
+    <video id="remoteVideo" autoplay controls></video>
+  </div>
+  <div class="btnWrapper">
+    <button id="callBtn">Call</button>
+    <button id="endStream">End Stream</button>
+  </div>
+
+  <div class="console">
+    <div class="chatbox">
+      <ul class="messages">
+      </ul>
+      <div class="enterMsg">
+        <input id='msgInput' type='text' />
+        <button id="msgSubmit">Submit</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

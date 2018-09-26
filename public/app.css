@@ -1,0 +1,73 @@
+.videoDisplay {
+  display: flex;
+  justify-content: space-around;
+}
+
+video {
+  height: 300px;
+  width: 300px;
+}
+
+#msgSubmit,
+#callBtn,
+#endStream {
+  width: 75px;
+  height: 35px;
+  border-radius: 5px;
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#msgSubmit:hover,
+#callBtn:hover,
+#endStream:hover {
+  background: #666;
+  color: #fff;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  margin: 10px auto;
+}
+
+#callBtn,
+#endStream {
+  width: 150px;
+}
+
+.chatbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #000;
+}
+
+.messages {
+  padding: 5px;
+  margin: 5px;
+  height: 200px;
+  overflow: auto;
+}
+
+.messages li {
+  list-style-type: none;
+  padding: 2px 0;
+}
+
+.enterMsg {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+}
+
+#msgInput {
+  width: 75%;
+  height: 30px;
+  font-size: 18px;
+  padding-left: 10px;
+}
